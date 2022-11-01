@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kolamsusu/static/css/main.716dc5de.css",
+    "main.js": "/kolamsusu/static/js/main.d8722a31.js",
+    "index.html": "/kolamsusu/index.html",
+    "main.716dc5de.css.map": "/kolamsusu/static/css/main.716dc5de.css.map",
+    "main.d8722a31.js.map": "/kolamsusu/static/js/main.d8722a31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.716dc5de.css",
+    "static/js/main.d8722a31.js"
+  ]
+}
