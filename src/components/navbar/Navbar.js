@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import { BsMenuButtonWide, BsXCircle } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsInstagram } from "react-icons/bs";
-import { FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-scroll";
 
 import "./navbar.css";
@@ -18,7 +14,7 @@ const Navbar = () => {
           <img
             src={process.env.PUBLIC_URL + "/logo/logo.png"}
             alt=""
-            className=" md:w-24 md:h-8 w-6 h-auto cursor-pointer "
+            className=" md:w-24 md:h-8 w-14 h-auto cursor-pointer "
           />
         </Link>
         <ul className="md:flex hidden flex-row md:space-x-4 lg:space-x-8 lg:text-lg text-base ">
@@ -115,12 +111,12 @@ const Navbar = () => {
               <img
                 src={process.env.PUBLIC_URL + "/logo/logo.png"}
                 alt=""
-                className=" w-24 h-8 cursor-pointer "
+                className=" w-14 h-auto cursor-pointer "
               />
             </Link>
 
             <BsXCircle
-              size={20}
+              size={15}
               className={
                 !nav
                   ? "transition-all duration-[2000ms] opacity-0 cursor-pointer"
@@ -130,7 +126,7 @@ const Navbar = () => {
             />
           </div>
 
-          <ul className="uppercase p-12">
+          <ul className="uppercase p-12 text-sm pl-8 pr-8 ">
             <li className="nav-items-sm">
               <Link
                 to="Home"
@@ -192,7 +188,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div className="px-12">
+          <div className="px-8">
             <Link
               to="ReachUs"
               spy={true}
@@ -205,32 +201,11 @@ const Navbar = () => {
                 Reach Us!
               </button>
             </Link>
-            <div className=" flex text-white space-x-3 my-12 ">
-              <button className="w-8 h-8 bg-gradient-to-r from-[#3B2623] to-[#C02D31] flex justify-center items-center rounded-full hover:opacity-40 transition-all duration-[1000ms] hover:scale-125 ">
-                <HiOutlineMail className=" text-sm " />
-              </button>
-              <button className="w-8 h-8 bg-gradient-to-r from-[#3B2623] to-[#C02D31] flex justify-center items-center rounded-full hover:opacity-40 transition-all duration-[1000ms] hover:scale-125 ">
-                <FaWhatsapp className=" text-sm " />
-              </button>
-              <button className="w-8 h-8 bg-gradient-to-r from-[#3B2623] to-[#C02D31] flex justify-center items-center rounded-full hover:opacity-40 transition-all duration-[1000ms] hover:scale-125 ">
-                <BsInstagram className=" text-sm " />
-              </button>
-              <button className="w-8 h-8 bg-gradient-to-r from-[#3B2623] to-[#C02D31] flex justify-center items-center rounded-full hover:opacity-40 transition-all duration-[1000ms] hover:scale-125 ">
-                <FaLinkedinIn className=" text-sm " />
-              </button>
-              <button className="w-8 h-8 bg-gradient-to-r from-[#3B2623] to-[#C02D31] flex justify-center items-center rounded-full hover:opacity-40 transition-all duration-[1000ms] hover:scale-125 ">
-                <IoLocationOutline className=" text-sm " />
-              </button>
-            </div>
-            <div className=" flex justify-center items-center text-white text-xs space-x-4 text-justify ">
-              <img
-                src={process.env.PUBLIC_URL + "/logo/copyright.png"}
-                alt=""
-                className=" w-5 h-5 "
-              />
+
+            <div className=" flex w-full justify-center items-center text-white text-xs space-x-4 text-justify mt-8 ">
               <p>
-                2022 Negeri Kolam Susu. All Right Reserved. Negeri Kolam Susu is
-                a Holding Company. Terms of Use. Privacy Policy.
+                2022 Negeri Kolam Susu. All Right Reserved. Terms of Use.
+                Privacy Policy.
               </p>
             </div>
           </div>

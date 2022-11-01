@@ -10,7 +10,7 @@ const Footer = () => {
       <div className=" w-[1550px] h-10 flex justify-center items-center px-14 space-x-4 ">
         <div className=" hidden md:flex-auto md:flex items-center lg:text-xs text-[10px] space-x-2 ">
           <img
-            src="${process.env.PUBLIC_URL}/logo/copyright.png"
+            src={process.env.PUBLIC_URL + "/logo/copyright.png"}
             alt=""
             className=" w-3 h-3 "
           />

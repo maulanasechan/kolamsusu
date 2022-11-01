@@ -39,14 +39,14 @@ const Teams = () => {
     >
       <div className=" md:w-[1550px] w-[570px] md:px-14 px-8 flex flex-col justify-center items-center">
         <tittle
-          className=" w-full h-8 flex justify-between items-center font-bold text-xl "
+          className=" w-full h-8 flex justify-between items-center font-bold md:text-xl text-sm "
           ref={ref}
         >
           <div
             className={
               inView
-                ? " h-[1px] lg:w-10/12 w-8/12 bg-white origin-left animate-tittle "
-                : " h-[1px] lg:w-10/12 w-8/12 bg-white origin-left  "
+                ? " h-[1px] lg:w-10/12 w-7/12 bg-white origin-left animate-tittle "
+                : " h-[1px] lg:w-10/12 w-7/12 bg-white origin-left  "
             }
           ></div>
           <p
@@ -60,15 +60,15 @@ const Teams = () => {
           </p>
         </tittle>
 
-        <div className=" flex w-full justify-between items-center lg:my-24 my-12 ">
-          <div className=" flex justify-start items-center ">
+        <div className=" flex md:flex-row flex-col w-full justify-between items-center lg:mt-16 md:mt-10 md:mb-20 mt-6 mb-10 ">
+          <div className=" flex justify-start items-center md:w-2/3 w-full ">
             <p className=" lg:text-2xl md:text-xl text-sm ">
               perkenalkan, <br />
               <span className=" font-bold ">keluarga "kecil" NKS </span>
             </p>
           </div>
-          <div className=" flex w-3/6 flex-col justify-center items-end space-y-6 ">
-            <p className=" text-right lg:text-lg md:text-sm text-[10px] ">
+          <div className=" flex md:w-3/6 w-full md:flex-col md:justify-center md:items-end justify-between items-center md:space-y-6 md:space-x-0 space-x-5 mt-4 ">
+            <p className=" md:text-right text-left lg:text-lg md:text-sm text-[8px] md:w-full w-1/2 ">
               di NKS, kami percaya bahwa tim yang{" "}
               <span className=" font-bold ">besar </span>
               tidak harus miliki jumlah personel yang “besar” juga, cukup dengan
@@ -77,12 +77,12 @@ const Teams = () => {
               </span>{" "}
               di tiap bidangnya.
             </p>
-            <p className=" text-right lg:text-sm md:text-[10px] text-[6px] ">
+            <p className=" text-right lg:text-sm md:text-[10px] text-[6px] md:w-full w-1/3 ">
               hal itulah yang membuat NKS dapat menekan biaya dengan tetap
               memberi kualitas <span className=" font-bold ">terbaik</span> dari
               produk yang kami berikan!
             </p>
-            <div className=" flex w-3/5 h-[2px] bg-white rounded-full "></div>
+            <div className=" md:flex hidden w-3/5 h-[2px] bg-white rounded-full "></div>
           </div>
         </div>
         <div className=" md:space-y-16 space-y-8 w-full ">{contentTeams}</div>

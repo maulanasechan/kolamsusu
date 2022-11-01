@@ -7,7 +7,7 @@ const AboutUs = () => {
 
   return (
     <section
-      className=" flex w-full h-screen text-white  justify-center items-center font-Poppins bg-red-500  "
+      className=" flex w-full h-screen text-white  justify-center items-center font-Poppins   "
       id="AboutUs"
     >
       <div className=" md:w-[1550px] w-[570px] md:px-14 px-8 flex flex-col justify-center items-center md:space-y-20 space-y-5 ">
@@ -18,8 +18,8 @@ const AboutUs = () => {
           <div
             className={
               inView
-                ? " h-[1px] md:w-10/12 w-6/12 bg-white origin-left animate-tittle "
-                : " h-[1px] md:w-10/12 w-6/12 bg-white origin-left  "
+                ? " h-[1px] md:w-10/12 w-7/12 bg-white origin-left animate-tittle "
+                : " h-[1px] md:w-10/12 w-7/12 bg-white origin-left  "
             }
           ></div>
           <p
