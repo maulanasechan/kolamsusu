@@ -7,19 +7,19 @@ const AboutUs = () => {
 
   return (
     <section
-      className=" flex w-full h-screen text-white  justify-center items-center font-Poppins  "
+      className=" flex w-full h-screen text-white  justify-center items-center font-Poppins bg-red-500  "
       id="AboutUs"
     >
-      <div className=" md:w-[1550px] w-[570px] md:px-14 px-8 flex flex-col justify-center items-center space-y-20 ">
+      <div className=" md:w-[1550px] w-[570px] md:px-14 px-8 flex flex-col justify-center items-center md:space-y-20 space-y-5 ">
         <tittle
-          className=" w-full h-8 flex justify-between items-center font-Poppins font-bold text-xl "
+          className=" w-full h-8 flex justify-between items-center font-Poppins font-bold md:text-xl text-base "
           ref={ref}
         >
           <div
             className={
               inView
-                ? " h-[1px] md:w-10/12 w-8/12 bg-white origin-left animate-tittle "
-                : " h-[1px] md:w-10/12 w-8/12 bg-white origin-left  "
+                ? " h-[1px] md:w-10/12 w-6/12 bg-white origin-left animate-tittle "
+                : " h-[1px] md:w-10/12 w-6/12 bg-white origin-left  "
             }
           ></div>
           <p
@@ -52,8 +52,8 @@ const AboutUs = () => {
             }
             ref={ref}
           >
-            <div className="space-y-5 flex flex-col justify-center items-center md:mt-0 mt-20 max-w-[90%]  ">
-              <h1 className=" font-bold lg:text-xl text-base md:text-left text-center ">
+            <div className="space-y-5 flex flex-col justify-center items-center md:mt-0 mt-5 max-w-[90%]  ">
+              <h1 className=" font-bold lg:text-xl text-xs md:text-left text-center ">
                 Negeri Kolam Susu (NKS) merupakan Event Organizer yang bergerak
                 pada bidang{" "}
                 <span className="italic">
@@ -61,7 +61,7 @@ const AboutUs = () => {
                 </span>{" "}
                 (MICE).
               </h1>
-              <p className=" text-justify font-light lg:text-sm text-xs ">
+              <p className=" text-justify font-light lg:text-sm text-[9px] ">
                 Berawal dari ‘keisengan’ mencoba platform live broadcasting
                 untuk Online Game, kini NKS telah berevolusi menjadi
                 penyelenggara event krusial seperti sidang dan konferensi

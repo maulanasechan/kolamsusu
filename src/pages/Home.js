@@ -27,7 +27,7 @@ const Home = () => {
               : "flex flex-col justify-end md:w-[600px] "
           }
         >
-          <h1 className=" font-bold md:text-2xl text-base ">
+          <h1 className=" font-bold md:text-2xl text-sm ">
             Selamat datang di{" "}
             <Typed
               strings={["Negeri Kolam Susu!"]}
@@ -36,7 +36,7 @@ const Home = () => {
               loop
             />
           </h1>
-          <p className=" font-light md:text-lg text-sm mt-2 ">
+          <p className=" font-light md:text-lg text-xs mt-2 ">
             Sebuah kolaborasi Industri Kreatif yang akan selalu menjadi solusi
             kebutuhan MICE{" "}
             <span className=" italic ">
