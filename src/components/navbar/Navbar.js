@@ -12,13 +12,13 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className=" w-full h-14  bg-[#151515] rounded-b-[20px] flex items-center justify-center fixed top-0 z-10 shadow-[0px_0px_15px_8px_rgba(0,0,0,0.3)] font-Poppins text-white ">
+    <div className=" w-full md:h-14 h-10 bg-[#151515] rounded-b-[20px] flex items-center justify-center fixed top-0 z-10 shadow-[0px_0px_15px_8px_rgba(0,0,0,0.3)] font-Poppins text-white ">
       <div className=" md:w-[1550px] w-[570px] md:px-14 px-8 flex items-center justify-between ">
         <Link to="Home" spy={true} smooth={true} offset={0} duration={2000}>
           <img
             src={process.env.PUBLIC_URL + "/logo/logo.png"}
             alt=""
-            className=" md:w-24 md:h-8 w-10 h-4 cursor-pointer "
+            className=" md:w-24 md:h-8 w-15 h-auto cursor-pointer "
           />
         </Link>
         <ul className="md:flex hidden flex-row md:space-x-4 lg:space-x-8 lg:text-lg text-base ">

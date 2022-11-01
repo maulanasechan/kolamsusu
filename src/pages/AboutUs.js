@@ -37,7 +37,7 @@ const AboutUs = () => {
           <div
             className={
               inView
-                ? " flex flex-1  justify-center items-center animate-fadeIn "
+                ? " flex flex-1  justify-center items-center md:animate-fadeIn animate-tittleText  "
                 : " flex flex-1  justify-center items-center "
             }
             ref={ref}
