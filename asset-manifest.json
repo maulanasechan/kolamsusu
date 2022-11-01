@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kolamsusu/static/css/main.716dc5de.css",
-    "main.js": "/kolamsusu/static/js/main.06ed2c89.js",
+    "main.css": "/kolamsusu/static/css/main.0640fa38.css",
+    "main.js": "/kolamsusu/static/js/main.05fa2f86.js",
     "index.html": "/kolamsusu/index.html",
-    "main.716dc5de.css.map": "/kolamsusu/static/css/main.716dc5de.css.map",
-    "main.06ed2c89.js.map": "/kolamsusu/static/js/main.06ed2c89.js.map"
+    "main.0640fa38.css.map": "/kolamsusu/static/css/main.0640fa38.css.map",
+    "main.05fa2f86.js.map": "/kolamsusu/static/js/main.05fa2f86.js.map"
   },
   "entrypoints": [
-    "static/css/main.716dc5de.css",
-    "static/js/main.06ed2c89.js"
+    "static/css/main.0640fa38.css",
+    "static/js/main.05fa2f86.js"
   ]
 }
