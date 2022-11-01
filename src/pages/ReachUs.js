@@ -13,7 +13,7 @@ const ReachUs = () => {
         <img
           className="w-full h-full object-cover "
           src={process.env.PUBLIC_URL + "/jumbotron/ReachUs.png"}
-          alt="/"
+          alt=""
         />
       </div>
       <div
