@@ -5,13 +5,13 @@ const Teams = () => {
   const { ref, inView } = useInView();
 
   const teams = [
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["/teams/team1.png", "Royal Ambarukmo"],
   ];
 
   // array of N elements, where N is the number of rows needed
@@ -24,7 +24,7 @@ const Teams = () => {
     <div className=" flex w-full justify-between items-center " key={idx}>
       {row.map((product, index) => (
         <img
-          src={product[0]}
+          src={process.env.PUBLIC_URL + product[0]}
           key={index}
           alt=""
           className="h-auto w-[28%] cursor-pointer hover:opacity-20 hover:scale-110 transition-all duration-1000 "

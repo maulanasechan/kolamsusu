@@ -24,22 +24,22 @@ const Services = () => {
 
   const items = [
     [
-      "${process.env.PUBLIC_URL}/galery/slider1.jpg",
+      "galery/slider1.jpg",
       "Meeting, Incentive, Conference & Exhibition",
       "We can made good Meetings and Conferences that your company need.",
     ],
     [
-      "${process.env.PUBLIC_URL}/galery/slider2.jpg",
+      "/galery/slider2.jpg",
       "Tour & Travel",
       "We can made good Entertainment that your company need.",
     ],
     [
-      "${process.env.PUBLIC_URL}/galery/slider3.jpg",
+      "/galery/slider3.jpg",
       "Creative Studio",
       "We can made good Gathering that your company need.",
     ],
     [
-      "${process.env.PUBLIC_URL}/galery/slider4.jpg",
+      "/galery/slider4.jpg",
       "Digital Printing & Production",
       "We can made good Meetings and Conferences that your company need.",
     ],
@@ -82,7 +82,7 @@ const Services = () => {
             key={index}
           >
             <img
-              src={item[0]}
+              src={process.env.PUBLIC_URL + item[0]}
               alt=""
               className=" w-full h-full object-cover opacity-20 "
             />
@@ -110,7 +110,7 @@ const Services = () => {
           ref={serviceItems}
         >
           <img
-            src={items[currentIndex][0]}
+            src={process.env.PUBLIC_URL + items[currentIndex][0]}
             alt=""
             className=" w-full h-full object-cover opacity-20 "
           />
