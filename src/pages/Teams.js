@@ -5,13 +5,13 @@ const Teams = () => {
   const { ref, inView } = useInView();
 
   const teams = [
-    ["/teams/team1.png", "Royal Ambarukmo"],
-    ["/teams/team1.png", "Royal Ambarukmo"],
-    ["/teams/team1.png", "Royal Ambarukmo"],
-    ["/teams/team1.png", "Royal Ambarukmo"],
-    ["/teams/team1.png", "Royal Ambarukmo"],
-    ["/teams/team1.png", "Royal Ambarukmo"],
-    ["/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
+    ["${process.env.PUBLIC_URL}/teams/team1.png", "Royal Ambarukmo"],
   ];
 
   // array of N elements, where N is the number of rows needed

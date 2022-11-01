@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className=" md:w-[1550px] w-[570px] md:px-14 px-8 flex items-center justify-between ">
         <Link to="Home" spy={true} smooth={true} offset={0} duration={2000}>
           <img
-            src="/logo/logo.png"
+            src="${process.env.PUBLIC_URL}/logo/logo.png"
             alt=""
             className=" w-24 h-8 cursor-pointer "
           />
@@ -113,7 +113,7 @@ const Navbar = () => {
               onClick={() => setNav(!nav)}
             >
               <img
-                src="/logo/logo.png"
+                src="${process.env.PUBLIC_URL}/logo/logo.png"
                 alt=""
                 className=" w-24 h-8 cursor-pointer "
               />
@@ -223,7 +223,11 @@ const Navbar = () => {
               </button>
             </div>
             <div className=" flex justify-center items-center text-white text-xs space-x-4 text-justify ">
-              <img src="/logo/copyright.png" alt="" className=" w-5 h-5 " />
+              <img
+                src="${process.env.PUBLIC_URL}/logo/copyright.png"
+                alt=""
+                className=" w-5 h-5 "
+              />
               <p>
                 2022 Negeri Kolam Susu. All Right Reserved. Negeri Kolam Susu is
                 a Holding Company. Terms of Use. Privacy Policy.

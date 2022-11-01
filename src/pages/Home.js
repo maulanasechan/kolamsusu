@@ -12,7 +12,7 @@ const Home = () => {
       <div className="w-full h-screen bg-black/10 absolute">
         <img
           className="w-full h-full object-cover mix-blend-soft-light "
-          src="jumbotron/home.png"
+          src="${process.env.PUBLIC_URL}/jumbotron/home.png"
           alt="/"
         />
       </div>

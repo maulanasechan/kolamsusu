@@ -6,10 +6,10 @@ let slideInterval;
 
 const Slider = () => {
   const galery = [
-    "/galery/slider1.jpg",
-    "/galery/slider2.jpg",
-    "/galery/slider3.jpg",
-    "/galery/slider4.jpg",
+    "${process.env.PUBLIC_URL}/galery/slider1.jpg",
+    "${process.env.PUBLIC_URL}/galery/slider2.jpg",
+    "${process.env.PUBLIC_URL}/galery/slider3.jpg",
+    "${process.env.PUBLIC_URL}/galery/slider4.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

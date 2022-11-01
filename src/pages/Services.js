@@ -24,22 +24,22 @@ const Services = () => {
 
   const items = [
     [
-      "/galery/slider1.jpg",
+      "${process.env.PUBLIC_URL}/galery/slider1.jpg",
       "Meeting, Incentive, Conference & Exhibition",
       "We can made good Meetings and Conferences that your company need.",
     ],
     [
-      "/galery/slider2.jpg",
+      "${process.env.PUBLIC_URL}/galery/slider2.jpg",
       "Tour & Travel",
       "We can made good Entertainment that your company need.",
     ],
     [
-      "/galery/slider3.jpg",
+      "${process.env.PUBLIC_URL}/galery/slider3.jpg",
       "Creative Studio",
       "We can made good Gathering that your company need.",
     ],
     [
-      "/galery/slider4.jpg",
+      "${process.env.PUBLIC_URL}/galery/slider4.jpg",
       "Digital Printing & Production",
       "We can made good Meetings and Conferences that your company need.",
     ],

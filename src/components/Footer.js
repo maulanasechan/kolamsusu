@@ -9,7 +9,11 @@ const Footer = () => {
     <div className=" fixed z-10 bottom-0 w-full h-10 bg-[#151515] rounded-t-[20px] shadow-[0px_0px_15px_8px_rgba(0,0,0,0.3)] flex justify-center font-Poppins text-white  ">
       <div className=" w-[1550px] h-10 flex justify-center items-center px-14 space-x-4 ">
         <div className=" hidden md:flex-auto md:flex items-center lg:text-xs text-[10px] space-x-2 ">
-          <img src="/logo/copyright.png" alt="" className=" w-3 h-3 " />
+          <img
+            src="${process.env.PUBLIC_URL}/logo/copyright.png"
+            alt=""
+            className=" w-3 h-3 "
+          />
           <p>
             2022 PT Negeri Kolam Susu. All Right Reserved. Terms of Use. Privacy
             Policy.
