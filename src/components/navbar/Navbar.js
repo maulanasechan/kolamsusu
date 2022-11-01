@@ -18,7 +18,7 @@ const Navbar = () => {
           <img
             src={process.env.PUBLIC_URL + "/logo/logo.png"}
             alt=""
-            className=" md:w-24 md:h-8 w-15 h-auto cursor-pointer "
+            className=" md:w-24 md:h-8 w-3 h-auto cursor-pointer "
           />
         </Link>
         <ul className="md:flex hidden flex-row md:space-x-4 lg:space-x-8 lg:text-lg text-base ">
