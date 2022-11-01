@@ -18,7 +18,7 @@ const Navbar = () => {
           <img
             src={process.env.PUBLIC_URL + "/logo/logo.png"}
             alt=""
-            className=" w-24 h-8 cursor-pointer "
+            className=" md:w-24 md:h-8 w-10 h-4 cursor-pointer "
           />
         </Link>
         <ul className="md:flex hidden flex-row md:space-x-4 lg:space-x-8 lg:text-lg text-base ">
@@ -88,7 +88,7 @@ const Navbar = () => {
           className="flex md:hidden cursor-pointer"
         >
           <BsMenuButtonWide
-            size={20}
+            size={15}
             className={
               nav
                 ? "transition-all duration-[2000ms] opacity-0"

@@ -47,7 +47,7 @@ const AboutUs = () => {
           <div
             className={
               inView
-                ? " h-[400px] space-y-5 flex flex-1 md:justify-end justify-center animate-fadeRight  "
+                ? " h-[400px] space-y-5 flex flex-1 md:justify-end justify-center md:animate-fadeRight animate-tittleText  "
                 : " h-[400px] space-y-5 flex flex-1 md:justify-end justify-center "
             }
             ref={ref}
