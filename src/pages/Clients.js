@@ -5,29 +5,20 @@ const Clients = () => {
   const { ref, inView } = useInView();
 
   const clients = [
-    [
-      "${process.env.PUBLIC_URL}/clients/client1.png",
-      "Kementerian Perhubungan",
-    ],
-    ["${process.env.PUBLIC_URL}/clients/client2.png", "KEMENPAREKRAF"],
-    [
-      "${process.env.PUBLIC_URL}/clients/client3.png",
-      "Kementerian Perindustrian",
-    ],
-    ["${process.env.PUBLIC_URL}/clients/client4.png", "TRAKINDO"],
-    ["${process.env.PUBLIC_URL}/clients/client5.png", "TNI Angakatan Laut"],
-    [
-      "${process.env.PUBLIC_URL}/clients/client6.png",
-      "International Maritime Organization",
-    ],
-    ["${process.env.PUBLIC_URL}/clients/client7.png", "ITS Surabaya"],
-    ["${process.env.PUBLIC_URL}/clients/client8.png", "Bank BNI"],
-    ["${process.env.PUBLIC_URL}/clients/client9.png", "JASAMARGA"],
-    ["${process.env.PUBLIC_URL}/clients/client10.png", "Samudra Indonesia"],
-    ["${process.env.PUBLIC_URL}/clients/client11.png", "DSM Biomedical"],
-    ["${process.env.PUBLIC_URL}/clients/client12.png", "AKUO Indonesia"],
-    ["${process.env.PUBLIC_URL}/clients/client13.png", "MOJ"],
-    ["${process.env.PUBLIC_URL}/clients/client14.png", "IKA ITS FTK "],
+    ["/clients/client1.png", "Kementerian Perhubungan"],
+    ["/clients/client2.png", "KEMENPAREKRAF"],
+    ["/clients/client3.png", "Kementerian Perindustrian"],
+    ["/clients/client4.png", "TRAKINDO"],
+    ["/clients/client5.png", "TNI Angakatan Laut"],
+    ["/clients/client6.png", "International Maritime Organization"],
+    ["/clients/client7.png", "ITS Surabaya"],
+    ["/clients/client8.png", "Bank BNI"],
+    ["/clients/client9.png", "JASAMARGA"],
+    ["/clients/client10.png", "Samudra Indonesia"],
+    ["/clients/client11.png", "DSM Biomedical"],
+    ["/clients/client12.png", "AKUO Indonesia"],
+    ["/clients/client13.png", "MOJ"],
+    ["/clients/client14.png", "IKA ITS FTK "],
   ];
 
   // array of N elements, where N is the number of rows needed
@@ -47,7 +38,7 @@ const Clients = () => {
           className=" flex justify-center items-center lg:w-[75px] lg:h-[75px] md:w-[60px] md:h-[60px]  w-[50px] h-[50px]  cursor-pointer text-white font-Poppins relative "
         >
           <img
-            src={product[0]}
+            src={process.env.PUBLIC_URL + product[0]}
             alt=""
             className=" object-cover w-full h-full hover:opacity-0 "
           />
@@ -60,20 +51,17 @@ const Clients = () => {
   ));
 
   const partners = [
-    ["${process.env.PUBLIC_URL}/partners/partners11.png", "Royal Ambarukmo"],
-    ["${process.env.PUBLIC_URL}/partners/partners1.png", "Marriott Bonvoy"],
-    [
-      "${process.env.PUBLIC_URL}/partners/partners2.png",
-      "All Accor Live Limitless",
-    ],
-    ["${process.env.PUBLIC_URL}/partners/partners3.png", "Renaissance"],
-    ["${process.env.PUBLIC_URL}/partners/partners4.png", "JW Marriott"],
-    ["${process.env.PUBLIC_URL}/partners/partners5.png", "Pullman"],
-    ["${process.env.PUBLIC_URL}/partners/partners6.png", "Four Points"],
-    ["${process.env.PUBLIC_URL}/partners/partners7.png", "Courtyard"],
-    ["${process.env.PUBLIC_URL}/partners/partners8.png", "Sheraton"],
-    ["${process.env.PUBLIC_URL}/partners/partners9.png", "Alila"],
-    ["${process.env.PUBLIC_URL}/partners/partners10.png", "Grand Mercure"],
+    ["/partners/partners11.png", "Royal Ambarukmo"],
+    ["/partners/partners1.png", "Marriott Bonvoy"],
+    ["/partners/partners2.png", "All Accor Live Limitless"],
+    ["/partners/partners3.png", "Renaissance"],
+    ["/partners/partners4.png", "JW Marriott"],
+    ["/partners/partners5.png", "Pullman"],
+    ["/partners/partners6.png", "Four Points"],
+    ["/partners/partners7.png", "Courtyard"],
+    ["/partners/partners8.png", "Sheraton"],
+    ["/partners/partners9.png", "Alila"],
+    ["/partners/partners10.png", "Grand Mercure"],
   ];
 
   // array of N elements, where N is the number of rows needed
@@ -90,7 +78,7 @@ const Clients = () => {
           className=" flex justify-center items-center w-[75px] h-[75px] cursor-pointer text-white font-Poppins relative "
         >
           <img
-            src={product[0]}
+            src={process.env.PUBLIC_URL + product[0]}
             alt=""
             className=" object-cover w-full h-full hover:opacity-0 "
           />
@@ -116,7 +104,7 @@ const Clients = () => {
           className=" flex justify-center items-center md:w-[60px] md:h-[60px] w-[50px] h-[50px] cursor-pointer text-white font-Poppins relative "
         >
           <img
-            src={product[0]}
+            src={process.env.PUBLIC_URL + product[0]}
             alt=""
             className=" object-cover w-full h-full hover:opacity-0 "
           />

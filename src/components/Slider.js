@@ -6,10 +6,10 @@ let slideInterval;
 
 const Slider = () => {
   const galery = [
-    "${process.env.PUBLIC_URL}/galery/slider1.jpg",
-    "${process.env.PUBLIC_URL}/galery/slider2.jpg",
-    "${process.env.PUBLIC_URL}/galery/slider3.jpg",
-    "${process.env.PUBLIC_URL}/galery/slider4.jpg",
+    "/galery/slider1.jpg",
+    "/galery/slider2.jpg",
+    "/galery/slider3.jpg",
+    "/galery/slider4.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,7 +59,7 @@ const Slider = () => {
       className="w-full lg:h-[450px] md:h-[300px] h-[280px] select-none relative overflow-hidden flex justify-center items-center "
     >
       <img
-        src={galery[currentIndex]}
+        src={process.env.PUBLIC_URL + galery[currentIndex]}
         alt=""
         className=" object-cover h-full w-full "
       />

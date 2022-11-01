@@ -12,7 +12,7 @@ const ReachUs = () => {
       <div className="w-full h-screen absolute">
         <img
           className="w-full h-full object-cover "
-          src="${process.env.PUBLIC_URL}/jumbotron/ReachUs.png"
+          src={process.env.PUBLIC_URL + "/jumbotron/ReachUs.png"}
           alt="/"
         />
       </div>
@@ -101,7 +101,7 @@ const ReachUs = () => {
                 type="submit"
                 className=" w-12 h-12 border-2 border-white rounded-full flex justify-center items-center"
               >
-                <img src="logo/send.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/logo/send.png"} alt="" />
               </button>
             </div>
           </form>

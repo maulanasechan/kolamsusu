@@ -24,7 +24,7 @@ const Services = () => {
 
   const items = [
     [
-      "galery/slider1.jpg",
+      "/galery/slider1.jpg",
       "Meeting, Incentive, Conference & Exhibition",
       "We can made good Meetings and Conferences that your company need.",
     ],
