@@ -80,7 +80,7 @@ const ReachUs = () => {
         <div
           className={
             inView
-              ? " flex flex-col w-full h-auto text-white space-y-2 lg:mt-8 mt-6 animate-fadeIn "
+              ? " flex flex-col w-full h-auto text-white space-y-2 lg:mt-8 mt-6 md:animate-fadeIn animate-tittleText "
               : " flex flex-col w-full h-auto text-white space-y-2 lg:mt-8 mt-6 "
           }
         >
@@ -95,7 +95,7 @@ const ReachUs = () => {
         <div
           className={
             inView
-              ? " flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 animate-fadeRight "
+              ? " flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 md:animate-fadeRight animate-tittleText "
               : " flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 "
           }
         >
