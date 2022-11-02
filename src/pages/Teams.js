@@ -60,7 +60,13 @@ const Teams = () => {
           </p>
         </tittle>
 
-        <div className=" flex md:flex-row flex-col w-full justify-between items-center lg:mt-16 md:mt-10 md:mb-20 mt-6 mb-10 ">
+        <div
+          className={
+            inView
+              ? " flex md:flex-row flex-col w-full justify-between items-center lg:mt-16 md:mt-10 md:mb-20 mt-6 mb-10 animate-tittle md:animate-fadeIn "
+              : " flex md:flex-row flex-col w-full justify-between items-center lg:mt-16 md:mt-10 md:mb-20 mt-6 mb-10 "
+          }
+        >
           <div className=" flex justify-start items-center md:w-2/3 w-full ">
             <p className=" lg:text-2xl md:text-xl text-sm ">
               perkenalkan, <br />
@@ -85,7 +91,15 @@ const Teams = () => {
             <div className=" md:flex hidden w-3/5 h-[2px] bg-white rounded-full "></div>
           </div>
         </div>
-        <div className=" md:space-y-16 space-y-8 w-full ">{contentTeams}</div>
+        <div
+          className={
+            inView
+              ? " md:space-y-16 space-y-8 w-full animate-tittleText "
+              : " md:space-y-16 space-y-8 w-full "
+          }
+        >
+          {contentTeams}
+        </div>
       </div>
     </section>
   );

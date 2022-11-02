@@ -32,7 +32,13 @@ const ReachUs = () => {
           </p>
           <div className=" h-[1px] md:w-36 w-28 bg-white "></div>
         </tittle>
-        <div className=" flex md:flex-row flex-col w-full h-auto text-white lg:mt-14 md:mt-8 mt-5 md:space-x-10 space-x-0 ">
+        <div
+          className={
+            inView
+              ? " flex md:flex-row flex-col w-full h-auto text-white lg:mt-14 md:mt-8 mt-5 md:space-x-10 space-x-0 md:animate-fadeIn animate-tittleText "
+              : " flex md:flex-row flex-col w-full h-auto text-white lg:mt-14 md:mt-8 mt-5 md:space-x-10 space-x-0 "
+          }
+        >
           <div className=" flex md:w-[75%] w-full h-full ">
             <div className=" flex w-[100%] h-full md:flex-col flex-row md:space-y-[0.35rem] space-y-0 md:justify-start justify-between ">
               <p className=" uppercase font-bold md:text-lg text-sm ">
@@ -71,7 +77,13 @@ const ReachUs = () => {
             </div>
           </div>
         </div>
-        <div className=" flex flex-col w-full h-auto text-white space-y-2 lg:mt-8 mt-6">
+        <div
+          className={
+            inView
+              ? " flex flex-col w-full h-auto text-white space-y-2 lg:mt-8 mt-6 animate-fadeIn "
+              : " flex flex-col w-full h-auto text-white space-y-2 lg:mt-8 mt-6 "
+          }
+        >
           <p className=" text-bold md:text-lg text-sm font-bold italic ">
             Have a question in mind ?
           </p>
@@ -80,7 +92,13 @@ const ReachUs = () => {
             contact you as soon as possible.
           </p>
         </div>
-        <div className=" flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 ">
+        <div
+          className={
+            inView
+              ? " flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 animate-fadeRight "
+              : " flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 "
+          }
+        >
           <form action="" className="flex flex-col w-full space-y-6 ">
             <div className=" flex md:w-[75%] w-full justify-between ">
               <input
