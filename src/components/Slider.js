@@ -65,13 +65,13 @@ const Slider = () => {
       />
       <div className=" text-white absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-5 ">
         <button
-          className=" transition lg:w-10 lg:h-10 md:w-7 md:h-7 w-10 h-10 bg-[#151515] border-2 border-white rounded-full flex justify-center items-center lg:text-base md:text-xs text-base hover:bg-gradient-to-r from-[#3B2623] to-[#C02D31] "
+          className=" transition lg:w-10 lg:h-10 md:w-7 md:h-7 w-5 h-5 bg-[#151515] border-2 border-white rounded-full flex justify-center items-center lg:text-base md:text-xs text-base hover:bg-gradient-to-r from-[#3B2623] to-[#C02D31] "
           onClick={handleOnPrevClick}
         >
           <ImArrowLeft />
         </button>
         <button
-          className=" transition lg:w-10 lg:h-10 md:w-7 md:h-7 w-10 h-10 bg-[#151515] border-2 border-white rounded-full flex justify-center items-center lg:text-base md:text-xs text-base hover:bg-gradient-to-r from-[#3B2623] to-[#C02D31] "
+          className=" transition lg:w-10 lg:h-10 md:w-7 md:h-7 w-5 h-5 bg-[#151515] border-2 border-white rounded-full flex justify-center items-center lg:text-base md:text-xs text-base hover:bg-gradient-to-r from-[#3B2623] to-[#C02D31] "
           onClick={handleOnNextClick}
         >
           <ImArrowRight />

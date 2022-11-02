@@ -46,7 +46,7 @@ const Home = () => {
           </p>
           <a
             href="/"
-            className=" mt-10 underline font-medium md:text-lg text-xs "
+            className=" md:mt-10 mt-6 underline font-medium md:text-lg text-xs "
           >
             Tonton{" "}
             <Typed
