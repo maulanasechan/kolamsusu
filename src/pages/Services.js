@@ -85,6 +85,7 @@ const Services = () => {
               src={process.env.PUBLIC_URL + item[0]}
               alt=""
               className=" w-full h-full object-cover opacity-20 "
+              loading="lazy"
             />
             <div className=" w-full h-full p-12 absolute flex flex-col ">
               <pages className=" text-base ">0{index + 1}</pages>
@@ -113,6 +114,7 @@ const Services = () => {
             src={process.env.PUBLIC_URL + items[currentIndex][0]}
             alt=""
             className=" w-full h-full object-cover opacity-20 "
+            loading="lazy"
           />
           <div className=" w-full h-full md:p-12 p-8 absolute flex flex-col ">
             <pages className=" md:text-xl text-base ">

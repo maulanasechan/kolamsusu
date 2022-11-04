@@ -62,6 +62,7 @@ const Slider = () => {
         src={process.env.PUBLIC_URL + galery[currentIndex]}
         alt=""
         className=" object-cover h-full w-full "
+        loading="lazy"
       />
       <div className=" text-white absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-5 ">
         <button

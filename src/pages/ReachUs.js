@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const ReachUs = () => {
   const { ref, inView } = useInView();
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(values);
+  };
+
+  const onChange = (e) => {
+    console.log(e.target.name);
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
   return (
     <section
       className=" w-full h-screen flex justify-center items-center font-Poppins "
@@ -99,15 +116,24 @@ const ReachUs = () => {
               : " flex w-full md:h-[40%] h-[38%] text-white lg:mt-14 md:mt-10 mt-5 "
           }
         >
-          <form action="" className="flex flex-col w-full space-y-6 ">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col w-full space-y-6 "
+          >
             <div className=" flex md:w-[75%] w-full justify-between ">
               <input
                 type="text"
+                name="name"
+                value={values.name}
+                onChange={onChange}
                 placeholder="Name *"
                 className="flex w-[47%] bg-transparent border-b-2 border-white placeholder:text-white p-2 focus:border-[#C02D31] focus:outline-none lg:text-base md:text-sm text-xs "
               />
               <input
                 type="text"
+                name="email"
+                value={values.email}
+                onChange={onChange}
                 placeholder="Email *"
                 className="flex w-[47%] bg-transparent border-b-2 border-white placeholder:text-white p-2 focus:border-[#C02D31] focus:outline-none lg:text-base md:text-sm text-xs "
               />
@@ -115,11 +141,17 @@ const ReachUs = () => {
 
             <input
               type="text"
+              name="subject"
+              value={values.subject}
+              onChange={onChange}
               placeholder="Subject *"
               className="flex md:w-[47%] w-full  bg-transparent border-b-2 border-white placeholder:text-white p-2 focus:border-[#C02D31] focus:outline-none lg:text-base md:text-sm text-xs "
             />
             <textarea
               type="text"
+              name="message"
+              value={values.message}
+              onChange={onChange}
               placeholder="Your Message"
               className=" flex flex-1 bg-transparent border-b-2 md:w-[75%] w-full resize-none border-white placeholder:text-white p-2 focus:border-[#C02D31] focus:outline-none lg:text-base md:text-sm text-xs "
             />

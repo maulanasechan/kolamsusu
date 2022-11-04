@@ -28,6 +28,7 @@ const Teams = () => {
           key={index}
           alt=""
           className="h-auto w-[28%] cursor-pointer hover:opacity-20 hover:scale-110 transition-all duration-1000 "
+          loading="lazy"
         />
       ))}
     </div>
