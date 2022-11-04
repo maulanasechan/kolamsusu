@@ -82,6 +82,7 @@ const Clients = () => {
             src={process.env.PUBLIC_URL + product[0]}
             alt=""
             className=" object-cover w-full h-full hover:opacity-0 "
+            loading="lazy"
           />
           <div className=" absolute flex w-full h-full bg-[#151515] opacity-0 hover:opacity-100  justify-center items-center ">
             <p className=" text-center text-sm ">{product[1]}</p>
@@ -111,6 +112,7 @@ const Clients = () => {
             src={process.env.PUBLIC_URL + product[0]}
             alt=""
             className=" object-cover w-full h-full hover:opacity-0 "
+            loading="lazy"
           />
           <div className=" absolute flex w-full h-full bg-[#151515] opacity-0 hover:opacity-100  justify-center items-center ">
             <p className=" text-center text-sm ">{product[1]}</p>
